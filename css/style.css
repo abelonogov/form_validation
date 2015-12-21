@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 22px;
+}
+form {
+  width: 600px;
+  margin: 25px auto;
+}
+li {
+  list-style: none;
+  position: relative;
+}
+input {
+  margin: 10px 0;
+  font-size: 18px;
+  width: 100%;
+  outline: 0;
+  border: 1px solid #464646;
+  padding: 15px 20px;
+}
+span {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  position: absolute;
+  right: 6px;
+  top: 20px;
+}
+span.error:hover:after {
+  content: attr(data-after);
+  display: block;
+  color: red;
+  position: absolute;
+  left: 40px;
+  width: 300px;
+}
+.error {
+  background: url(../img/error.png) no-repeat center;
+}
+.ok {
+  background: url(../img/ok.png) no-repeat center;
+}
+.valid {
+  border: 1px solid green;
+}
+.invalid {
+  border: 1px solid red;
+}
+.message {
+  padding: 10px;
+  background-color: red;
+}
